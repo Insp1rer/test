@@ -7,7 +7,10 @@
     <title>Vanilla App Template</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,30 +21,45 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="overall">
-      <h1 class="hidden">About me</h1>
+    <div class="container">
+      <div class="overall">
+        <h1 class="hidden">About me</h1>
+        <section>
+          <div class="st-block">
+            <p class="text">
+              I work with people all over the world to create impressive and
+              <span class="text-red-highlight">functional</span>
+              <span class="text-gray-highlight">websites</span> that reflect
+              each client's unique personality.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="st-block">
+            <img
+              class="img"
+              src="./img/mobile/about-me-mobile-1x.jpg"
+              alt="man"
+            />
+          </div>
+        </section>
+      </div>
       <section>
-        <div class="st-block">
-          <p class="text">
-            I work with people all over the world to create impressive and
-            <span class="text-red-highlight">functional</span>
-            <span class="text-gray-highlight">websites</span> that reflect each
-            client's unique personality.
-          </p>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">Заголовок 1</div>
+            <div class="accordion-content">Вміст 1</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Заголовок 2</div>
+            <div class="accordion-content">Вміст 2</div>
+          </div>
         </div>
       </section>
       <section>
-        <div class="st-block">
-          <img class="img" src="./img/man.png" alt="man" />
-        </div>
+        <div></div>
       </section>
     </div>
-    <section>
-      <div></div>
-    </section>
-    <section>
-      <div></div>
-    </section>
 
     <script type="module" src="./main.js"></script>
   </body>

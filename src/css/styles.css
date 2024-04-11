@@ -44,10 +44,20 @@ img {
 body {
   background-color: var(background-color);
   color: #fafafa;
-  padding: 16px;
-  /* max-width: 743px; */
-  margin: 0 auto;
-  align-items: center;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* питаннячко 🤔*/
+section {
+  align-self: center;
 }
 
 .hidden {
@@ -57,7 +67,7 @@ body {
 .text {
   font-weight: 500px;
   font-size: 24px;
-  line-height: 117%;
+  line-height: 28px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   padding-left: 32px;
@@ -77,37 +87,76 @@ body {
 .st-block {
   background-color: #242527;
   height: 500px;
-  /* max-width: 704px; */
-  max-width: 343px;
+  width: 343px;
   border-radius: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .overall {
   display: flex;
-  gap: 26px;
+  gap: 16px;
   flex-direction: column;
 }
 
 .img {
-  max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
+  border-radius: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .st-block {
-    height: 700px;
-    max-width: 1360px;
-  }
-  body {
-    padding-left: 32px;
-    padding-right: 32px;
+  .container {
+    max-width: 768px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
   .text {
     font-size: 38px;
-    padding-left: 64.5px;
-    padding-right: 64.5px;
+    line-height: 40px;
+    padding-left: 64px;
+    padding-right: 64px;
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  .st-block {
+    height: 700px;
+    width: 704px;
+  }
+  .img {
+    content: url(../img/tablet/about-me-tablet-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  .text {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  .st-block {
+    height: 700px;
+    width: 680px;
+  }
+  .overall {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    content: url(../img/desktop/about-me-desktop-1x.jpg);
+  }
+}
+
+/* ------------------------------------- */
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-header {
+  cursor: pointer;
 }
