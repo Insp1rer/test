@@ -20,13 +20,15 @@
     />
     
     <script type="module" crossorigin src="/test/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/test/assets/index-65865e36.css">
+    <link rel="modulepreload" crossorigin href="/test/assets/vendor-8f98089f.js">
+    <link rel="stylesheet" href="/test/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/test/assets/index-cd69fb4d.css">
   </head>
   <body>
-    <div class="container">
+    <section>
       <div class="overall">
         <h1 class="hidden">About me</h1>
-        <section>
+        <div class="container overall-description">
           <div class="st-block">
             <p class="text">
               I work with people all over the world to create impressive and
@@ -35,8 +37,8 @@
               each client's unique personality.
             </p>
           </div>
-        </section>
-        <section>
+        </div>
+        <div class="container overall-photo">
           <div class="st-block">
             <img
               class="img"
@@ -44,24 +46,79 @@
               alt="man"
             />
           </div>
-        </section>
-      </div>
-      <section>
-        <div class="accordion">
-          <div class="accordion-item">
-            <div class="accordion-header">Заголовок 1</div>
-            <div class="accordion-content">Вміст 1</div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header">Заголовок 2</div>
-            <div class="accordion-content">Вміст 2</div>
-          </div>
         </div>
-      </section>
-      <section>
+      </div>
+      <div class="accordion-section container">
+        <ul class="accordion-list">
+          <li class="accordion-list-item">
+            <h5 class="accordion-list-item-title">
+              About me
+              <button class="accordion-list-item-button">
+                <svg
+                  class="accordion-list-item-icon"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1.5L6 6.5L1 1.5"
+                    stroke="#FAFAFA"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </h5>
+          </li>
+          <li class="accordion-list-item">
+            <h5 class="accordion-list-item-title">
+              About me
+              <button class="accordion-list-item-button">
+                <svg
+                  class="accordion-list-item-icon"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1.5L6 6.5L1 1.5"
+                    stroke="#FAFAFA"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </h5>
+          </li>
+          <li class="accordion-list-item">
+            <h5 class="accordion-list-item-title">
+              About me
+              <button class="accordion-list-item-button">
+                <svg
+                  class="accordion-list-item-icon"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1.5L6 6.5L1 1.5"
+                    stroke="#FAFAFA"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div>
         <div></div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     
   </body>
