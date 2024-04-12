@@ -56,9 +56,9 @@ body {
 }
 
 /* питаннячко 🤔*/
-section {
+/* section {
   align-self: center;
-}
+} */
 
 .hidden {
   display: none;
@@ -104,6 +104,68 @@ section {
   border-radius: 24px;
 }
 
+/* ------------------------------------- */
+
+/* .accordion-container {
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+  color: #fafafa;
+}
+
+.accordion-container .ac {
+  background-color: #1c1d20;
+}
+
+.accordion-container .ac .ac-trigger {
+  color: #fafafa;
+}
+
+.accordion-container .ac .ac-trigger:focus {
+  color: #fafafa;
+} */
+
+.accordion-section {
+  padding-top: 30px;
+  width: 343px;
+}
+
+.accordion-list-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 18px;
+  margin: 0;
+  align-items: center;
+  border: 1px solid transparent;
+  color: rgba(250, 250, 250, 0.4);
+  border-bottom-color: rgba(250, 250, 250, 0.2);
+}
+
+.accordion-list-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 20px;
+  border-radius: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.accordion-list-item-icon {
+  display: block;
+  flex-shrink: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -125,6 +187,9 @@ section {
   .img {
     content: url(../img/tablet/about-me-tablet-1x.jpg);
   }
+  .accordion-section {
+    width: 700px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -142,21 +207,26 @@ section {
     width: 680px;
   }
   .overall {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 1376px;
+    padding: 0;
+    padding-bottom: ;
+    margin-left: auto;
+    margin-right: auto;
   }
   .img {
     content: url(../img/desktop/about-me-desktop-1x.jpg);
   }
-}
-
-/* ------------------------------------- */
-
-.accordion-content {
-  display: none;
-}
-
-.accordion-header {
-  cursor: pointer;
+  .accordion-section {
+    width: 1376px;
+  }
+  .overall-description {
+    padding: 0;
+  }
+  .overall-photo {
+    padding: 0;
+  }
 }
