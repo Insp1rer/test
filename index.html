@@ -22,29 +22,44 @@
     <script type="module" crossorigin src="/test/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/test/assets/vendor-3605dc25.js">
     <link rel="stylesheet" href="/test/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/test/assets/index-1208d067.css">
+    <link rel="stylesheet" href="/test/assets/index-f1e96ec6.css">
   </head>
   <body>
-    <section>
-      <div class="overall">
-        <h1 class="hidden">About me</h1>
-        <div class="container overall-description">
-          <div class="st-block">
-            <p class="text">
+    <section class="about-me-section">
+      <div class="about-me-overall">
+        <h1 class="about-me-hidden-header">About me</h1>
+        <div class="container about-me-overall-description">
+          <div class="about-me-description-box">
+            <p class="about-me-description-text">
               I work with people all over the world to create impressive and
-              <span class="text-red-highlight">functional</span>
-              <span class="text-gray-highlight">websites</span> that reflect
-              each client's unique personality.
+              <span class="about-me-description-text-red">functional</span>
+              <span class="about-me-description-text-gray">websites</span> that
+              reflect each client's unique personality.
             </p>
           </div>
         </div>
-        <div class="container overall-photo">
-          <div class="st-block">
-            <img
-              class="img"
-              src="/test/assets/about-me-mobile-1x-3d94707f.jpg"
-              alt="man"
-            />
+        <div class="container about-me-overall-photo">
+          <div class="about-me-description-box">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/test/assets/about-me-desktop-1x-17ac7f15.jpg 1x, /test/assets/about-me-desktop-2x-2b88d65d.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/test/assets/about-me-tablet-1x-816c873a.jpg 1x, /test/assets/about-me-tablet-2x-1e8790d7.jpg 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/test/assets/about-me-mobile-1x-3d94707f.jpg 1x, /test/assets/about-me-mobile-2x-7b50642b.jpg 2x"
+              />
+              <img
+                class="about-me-description-image"
+                src="/test/assets/about-me-mobile-1x-3d94707f.jpg"
+                alt="Man with laptop"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -54,19 +69,8 @@
             <h5 class="accordion-list-item-title ac-header">
               About me
               <button class="accordion-list-item-button ac-trigger">
-                <svg
-                  class="accordion-list-item-icon"
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 1.5L6 6.5L1 1.5"
-                    stroke="#FAFAFA"
-                    stroke-width="2"
-                  />
+                <svg class="accordion-list-item-icon" width="20" height="20">
+                  <use href="/test/assets/sprite-664d6a64.svg#icon-accordion-down"></use>
                 </svg>
               </button>
             </h5>
@@ -96,19 +100,8 @@
             <h5 class="accordion-list-item-title ac-header">
               ROLE
               <button class="accordion-list-item-button ac-trigger">
-                <svg
-                  class="accordion-list-item-icon"
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 1.5L6 6.5L1 1.5"
-                    stroke="#FAFAFA"
-                    stroke-width="2"
-                  />
+                <svg class="accordion-list-item-icon" width="20" height="20">
+                  <use href="/test/assets/sprite-664d6a64.svg#icon-accordion-down"></use>
                 </svg>
               </button>
             </h5>
@@ -124,19 +117,8 @@
             <h5 class="accordion-list-item-title ac-header">
               EDUCATION
               <button class="accordion-list-item-button ac-trigger">
-                <svg
-                  class="accordion-list-item-icon"
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 1.5L6 6.5L1 1.5"
-                    stroke="#FAFAFA"
-                    stroke-width="2"
-                  />
+                <svg class="accordion-list-item-icon" width="20" height="20">
+                  <use href="/test/assets/sprite-664d6a64.svg#icon-accordion-down"></use>
                 </svg>
               </button>
             </h5>
@@ -178,27 +160,8 @@
           </ul>
         </div>
         <div class="swiper-btn-next swiper-button-next">
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.66699 14H23.3337"
-              stroke="#3B3B3B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M16.333 7L23.333 14L16.333 21"
-              stroke="#3B3B3B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg class="about-me-swiper-arrow" width="28" height="28">
+            <use href="/test/assets/sprite-664d6a64.svg#icon-slider-arrow-right"></use>
           </svg>
         </div>
       </div>
