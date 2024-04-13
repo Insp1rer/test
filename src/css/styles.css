@@ -1,9 +1,12 @@
 :root {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
+}
 
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility; */
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 h1,
@@ -55,11 +58,16 @@ body {
   margin-right: auto;
 }
 
-.hidden {
+.about-me-hidden-header {
   display: none;
 }
 
-.text {
+.about-me-section {
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+
+.about-me-description-text {
   font-weight: 500px;
   font-size: 24px;
   line-height: 28px;
@@ -71,30 +79,30 @@ body {
   padding-bottom: 36px;
 }
 
-.text-red-highlight {
+.about-me-description-text-red {
   color: #ed3b44;
 }
 
-.text-gray-highlight {
+.about-me-description-text-gray {
   opacity: 40%;
 }
 
-.st-block {
+.about-me-description-box {
   background-color: #242527;
   height: 500px;
-  width: 343px;
+  /* width: 343px; */
   border-radius: 24px;
   margin: 0;
   padding: 0;
 }
 
-.overall {
+.about-me-overall {
   display: flex;
   gap: 16px;
   flex-direction: column;
 }
 
-.img {
+.about-me-description-image {
   object-fit: cover;
   border-radius: 24px;
 }
@@ -104,7 +112,7 @@ body {
 .accordion-section {
   padding-top: 20px;
   padding-bottom: 32px;
-  width: 343px;
+  /* width: 343px; */
 }
 
 .accordion-list-item {
@@ -199,10 +207,9 @@ body {
   transform: rotate(180deg);
 }
 
-/* swiper */
+/* -----------------Swiper-------------------- */
 
 .swiper-section {
-  width: 343px;
   display: flex;
   align-items: center;
 }
@@ -247,13 +254,19 @@ body {
   content: none;
 }
 
+/* -----------------Adaptive-------------------- */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 33px;
     padding-right: 33px;
   }
-  .text {
+  .about-me-section {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+  .about-me-description-text {
     font-size: 38px;
     line-height: 40px;
     padding-left: 64px;
@@ -261,15 +274,11 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .st-block {
+  .about-me-description-box {
     height: 700px;
     width: 704px;
   }
-  .img {
-    content: url(../img/tablet/about-me-tablet-1x.jpg);
-  }
   .accordion-section {
-    width: 704px;
     padding-top: 40px;
     padding-bottom: 64px;
   }
@@ -292,10 +301,6 @@ body {
   .indented-list-last {
     margin-bottom: 36px;
   }
-
-  .swiper-section {
-    width: 704px;
-  }
   .swiper-btn {
     min-width: 200px;
     height: 200px;
@@ -304,7 +309,7 @@ body {
     min-width: 200px;
   }
   .swiper-section .swiper {
-    margin-right: 76px;
+    margin-right: 74px;
   }
 }
 
@@ -314,15 +319,19 @@ body {
     padding-left: 31px;
     padding-right: 31px;
   }
-  .text {
+  .about-me-section {
+    padding-top: 48px;
+    padding-bottom: 85px;
+  }
+  .about-me-description-text {
     padding-left: 66px;
     padding-right: 66px;
   }
-  .st-block {
+  .about-me-description-box {
     height: 700px;
     width: 680px;
   }
-  .overall {
+  .about-me-overall {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -332,18 +341,16 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .img {
-    content: url(../img/desktop/about-me-desktop-1x.jpg);
-  }
+
   .accordion-section {
     width: 1376px;
     padding-top: 72px;
     padding-bottom: 95px;
   }
-  .overall-description {
+  .about-me-overall-description {
     padding: 0;
   }
-  .overall-photo {
+  .about-me-overall-photo {
     padding: 0;
   }
   .accordion-list-item-text {
@@ -362,7 +369,4 @@ body {
   .swiper-section {
     width: 1312px;
   }
-  /* .swiper-container {
-    gap: 78px;
-  } */
 }
