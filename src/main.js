@@ -15,25 +15,28 @@ import Swiper from 'swiper';
 import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 
 let params = {
   modules: [Navigation, Mousewheel, Keyboard],
 
+  // slidesPerView: 'auto',
   slidesPerView: 2,
-  // maxwidth: 262,
+  lazy: true,
   loop: true,
   centeredSlides: false,
   direction: 'horizontal',
   mousewheel: true,
   keyboard: true,
-  freeMode: true,
+  spaceBetween: 0,
 
   breakpoints: {
     768: {
+      // slidesPerView: 'auto',
       slidesPerView: 3,
     },
     1440: {
+      // slidesPerView: 'auto',
       slidesPerView: 6,
     },
   },
@@ -41,6 +44,14 @@ let params = {
   navigation: {
     nextEl: '.swiper-button-next',
   },
+
+  on: {
+    init: function () {
+      document
+        .querySelector('.swiper-button-next')
+        .classList.remove('swiper-button-lock');
+    },
+  },
 };
 
-const swiper = new Swiper('.swiper', params);
+const aboutMeSwiper = new Swiper('.about-me-swiper', params);
