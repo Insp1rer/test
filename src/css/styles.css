@@ -55,11 +55,6 @@ body {
   margin-right: auto;
 }
 
-/* питаннячко 🤔*/
-/* section {
-  align-self: center;
-} */
-
 .hidden {
   display: none;
 }
@@ -107,7 +102,8 @@ body {
 /* -----------------Accordion-------------------- */
 
 .accordion-section {
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 32px;
   width: 343px;
 }
 
@@ -191,8 +187,8 @@ body {
 
 .indented-list {
   display: block;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .indented-list-last {
@@ -201,6 +197,60 @@ body {
 
 .is-active .accordion-list-item-icon {
   transform: rotate(180deg);
+}
+
+/* swiper */
+
+.swiper-section {
+  width: 343px;
+}
+
+.swiper-btn {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+  color: #fafafa;
+}
+
+/* .swiper-wrapper-item .swiper-slide {
+  width: 130px !important;
+  height: 130px !important;
+} */
+
+/* .swiper-wrapper-list {
+  display: flex;
+} */
+
+.swiper-wrapper .swiper-wrapper-list {
+  width: 260px !important;
+}
+
+.swiper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  /* gap: 58px; */
+}
+
+/* .swiper {
+  width: 600px !important;
+} */
+
+/* .swiper-wrapper {
+  overflow: hidden;
+} */
+
+.swiper-slide-active {
+  background-color: #ed3b44;
+  border-radius: 50%;
+  border: none;
+}
+
+.swiper-btn-next.swiper-button-next:after {
+  content: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -225,10 +275,13 @@ body {
     content: url(../img/tablet/about-me-tablet-1x.jpg);
   }
   .accordion-section {
-    width: 700px;
+    width: 704px;
+    padding-top: 40px;
+    padding-bottom: 64px;
   }
   .ac .ac-header.accordion-list-item-title {
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .ac .ac-trigger.accordion-list-item-button {
     width: 40px;
@@ -236,14 +289,24 @@ body {
   }
   .indented {
     display: block;
-    margin-top: 24px;
+    margin-top: 25px;
     margin-bottom: 36px;
   }
   .accordion-list-item.ac.is-active .ac-header.accordion-list-item-title {
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
   .indented-list-last {
     margin-bottom: 36px;
+  }
+  .swiper-section {
+    width: 704px;
+  }
+  .swiper-btn {
+    width: 200px;
+    height: 200px;
+  }
+  .swiper-container {
+    gap: 70px;
   }
 }
 
@@ -276,11 +339,32 @@ body {
   }
   .accordion-section {
     width: 1376px;
+    padding-top: 72px;
+    padding-bottom: 95px;
   }
   .overall-description {
     padding: 0;
   }
   .overall-photo {
     padding: 0;
+  }
+  .accordion-list-item-text {
+    /* Ширина верхньої картки + gap між ними */
+    padding-left: 696px;
+    padding-right: 68px;
+  }
+  .indented {
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
+  .intended-enter {
+    display: block;
+    margin-top: 4px;
+  }
+  .swiper-section {
+    width: 1312px;
+  }
+  .swiper-container {
+    gap: 78px;
   }
 }
